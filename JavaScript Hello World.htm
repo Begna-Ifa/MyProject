@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Hello World</title>
+    <script type="text/javascript">
+        function sayHello() {
+            alert("hello world")
+        }
+
+        function validateForm() {
+            var x = document.myForm.fName.value;
+            if (x == null || x == "") {
+                alert("Frist name must be filled out");
+                return false;
+            }
+        }
+
+    </script>
+    <style>
+        body{
+            background-color: rgb(226, 43, 226);
+            box-sizing: border-box;
+            border-width: 2px;
+        }
+        h2{
+            color: rgb(4, 0, 255);
+        }
+        fieldset{
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Using Switch Statement and window prompt</h2>
+    <script>
+        var x = window.prompt("enter a no. less than 2");
+        x = Number(x)
+        switch (x) {
+            case 0: document.write("zero");
+                break;
+            case 1: document.write("one");
+                break;
+            default: document.write("not void");
+        }
+    </script>one
+        <br>
+
+    
+    <h2>Operator in javaScript</h2>
+    <script type="text/javascript">
+        var x = 3;
+        var y = 10;
+        document.write(typeof x + "<br/>");
+        document.write(x++ * ++y + y + x + "<br/>");
+        x = 3;
+        y = 10;
+        document.write(++x * ++y + y / x + y + " <br/>");
+        x = 3;
+        y = 10;
+        document.write(++x * y++ + y + x + "<br/>");
+        document.write("y=" + y + "x=" + x);
+        var variable = 1; var variable2 = 2;
+    </script>number<br>48<br>57.75 <br>55<br>y=11x=4
+    <br>
+    <h2>Using if/else Statement in javaScript</h2>
+    <script type="text/javascript">
+        var variable = 1; var variable2 = 2;
+        if (variable >= 0) {
+            document.write("<p>1 is greater than 0<p/>");
+        }
+        document.write("<p>Resuming Execution after 'if' statement </p>");
+        if (variable > variable2) {
+            document.write("<p>1 is greater than 2 </p>");
+        }
+        else {
+            document.write("<p> 2 is greater than 1 </P>");
+        }
+        document.write("<p>Resuming Execution after 'if/else' statement </p>");
+    </script><p>1 is greater than 0</p><p></p><p>Resuming Execution after 'if' statement </p><p> 2 is greater than 1 </p><p>Resuming Execution after 'if/else' statement </p>
+    <script language="javascript">
+        document.write('JavaScript  says"hello world"')
+
+    </script>JavaScript  says"hello world"
+    <script type="yext/javascript">
+    document.write("hello world")
+  </script>
+    <br>
+    <input type="button" onclick="sayHello()" value="sayHello">
+    <fieldset>
+    <legend><h4>Table creation in javaScript</h4></legend><table border="2" width="100%">
+        
+        <script type="text/javascript">
+            num = 1;
+            while (num <= 4) {
+                document.write("<tr>");
+                j = 1;
+                while (j <= 4) {
+                    document.write("<td>" + num + j + "<td>");
+                    j++;
+                }
+                document.write("<tr>");
+                num++;
+            }
+        </script><tbody><tr><td>11</td><td></td><td>12</td><td></td><td>13</td><td></td><td>14</td><td></td></tr><tr></tr><tr><td>21</td><td></td><td>22</td><td></td><td>23</td><td></td><td>24</td><td></td></tr><tr></tr><tr><td>31</td><td></td><td>32</td><td></td><td>33</td><td></td><td>34</td><td></td></tr><tr></tr><tr><td>41</td><td></td><td>42</td><td></td><td>43</td><td></td><td>44</td><td></td></tr><tr>
+    </tr></tbody></table>
+</fieldset>
+    <h2>JavaScript variable Sequence</h2>
+    <script type="text/javascript">
+        function calculateDensity(height, width, dipth, mass) {
+            var volume = height * dipth * width;
+            var denisty = mass / volume;
+            return denisty;
+        }
+        var hth = 2, wth = 3, dth = 4, mass = 10;
+        var result = calculateDensity(hth, wth, dth, mass);
+        document.write(result);
+    </script>0.4166666666666667
+    <form action="deno_form.php" name="myForm" onsubmit="return validateForm()" method="post">
+        FristName: <input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>Click the button to see line break in confirm box</h2>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let text = "pres a buttom\n or Either OK or cancel";
+            if (confirm(text) == true) {
+                text = "you pressed ok";
+            }
+            else {
+                text = "you cancelled"
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

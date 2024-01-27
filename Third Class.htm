@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Third Class</title>
+    </head><body><header> <b>Well Come to our third class</b> </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .city{
+        background-color: tomato;
+        color: white;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+<style>
+    .note{
+        font-size: 120%;
+        color: red;
+    }
+</style>
+<style>
+    #myheader{
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+    }
+</style>
+
+    <ul style="list-style-type: disc;"></ul>
+    <li>Coffe</li>
+    <li>Tea
+        <ul>
+            <li>Black tea</li>
+            <li>Green Tea</li>
+        </ul>
+    </li>
+    <li>Milk</li>
+    <hr style="color: red;">
+    <ol type="1"></ol>
+    <li>Coffe</li>
+    <li>Tea
+        <ol>
+        <li>Black Tea</li>
+        <li>Green tea</li>
+    </ol>
+    </li>
+    <li>Milk</li>
+    <p>the ff div tag help us to display a block of cde separetely</p>
+    <div>Hello Word</div>
+    <div style="background-color: black;color: white;padding: 20px;">
+        <h1>London</h1>
+        <p>london is the capital city of England</p>
+
+    </div>
+    <p>My brother has <span style="color: blue;font-weight: bold;">blue</span> eyes and my father has <span style="color: darkolivegreen;font-weight: bold;">dark</span> eyes</p>
+    <div class="city">
+        <h2>lonndon</h2>
+        <p>London is the capital city England</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital city of France</p>
+    </div>
+    <div class="city">
+        <h2>tokyo</h2>
+        <p>Tokyo is the capital city of japan</p>
+    </div>
+    <h1>My  <span class="note">important</span> Heading.</h1>
+    <p>This is Some<span class="note"> Importanat</span> text</p>
+    <h1 id="myheader"> My header</h1>
+    <p>Save the document by pressing <kbd> <b>Ctr+s</b></kbd></p>
+    <p style="color: red;"> HTML entity codes for the characters</p>
+    ' <br>
+    ↰<br>
+    &gt; <br>
+    " <br>
+    ¢ <br>
+    £ <br>
+    ¥ <br>
+    € <br>
+    © <br>
+    <p> &nbsp;    
+     ⁢    <br>&gt;   <br>&amp;     <br>'  <br>¢  <br> ¥ <br> €   <br>®
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</p></body></html>

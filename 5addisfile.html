@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Addition to 5th class</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        header {
+            background-color: brown;
+            color: white;
+            padding: 1rem;
+        }
+        
+        nav {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+        }
+        
+        section {
+            flex: 1;
+            display: flex;
+            background-color: aquamarine;
+        }
+        
+        aside {
+            flex: 1;
+            background-color: pink;
+            padding: 1rem;
+        }
+        
+        main {
+            flex: 2;
+            padding: 1rem;
+        }
+        
+        footer {
+            background-color: brown;
+            color: white;
+            padding: 1rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            
+            nav a {
+                margin-bottom: 0.5rem;
+            }
+            
+            section {
+                flex-direction: column;
+            }
+            
+            aside, main {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Addition to 5th class</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <section>
+       <aside>left</aside>
+       <main>main</main>
+       <aside>right</aside>
+    </section>
+    <footer>
+        &copy; 2021 Addition to 5th class
+    </footer>
+</body>
+</html>

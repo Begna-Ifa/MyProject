@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portifolio</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/logo.webp" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#services">service</a></li>
+                    <li><a href="#portifolio">portifolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contuct">Contuct</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <p>UI/UX Desiegner</p>
+                <h1> Hi I'm <span>Wakisa</span> from  Wolkite University</h1>
+                <h6>The following is Web design Class progress</h6>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <a href="new.html">first class</a> <br>
+    <a href="secondClass.html"> second class</a> <br>
+    <a href="thirdClass.html">Third Class</a><br>
+    <a href="forthClass.html">Forth Class</a><br>
+    <a href="fifthClass.html">Forth Class</a><br>
+     <a href="2ColumnWebsite.html">2 Column webpage Class</a><br>
+      <a href="5addisfile.html">addition to 5th Class</a><br>
+  <!-----------------About---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/people.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> Hello!! World My name is Wakisa I'm from Wolkite University. Studying at collage of computing and Informatics ,Department of Software Engineering and i Gona to the world of Developing Software <br> So any one who want to get me can contuct me at WKU by the link in the discripion of  my social media </p>
+                    <div class="title">
+                        <p class="links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="links" onclick="opentab('Experience')">Experience</p>
+                        <p class="links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI?UX</span><br> disigning web/app iterfaces</li><br>
+                            <li><span>web development</span> <br> web app development</li><br>
+                            <li><span>APP development</span> <br> building Andriod/ios  app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Experience">
+                        <ul>
+                            <li><span>from 2014-16</span><br> training for web design</li><br>
+                            <li><span>from 2014-16</span> <br> web app  dev't training</li><br>
+                            <li><span>from 2014-16</span> <br> building mobile app training</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>for web designing</span><br> i'am going to take degree</li><br>
+                            <li><span>for Andriod</span><br> i'am going to take degree</li><br>
+                            <li><span>for mobile App</span><br> i'am going to take degree</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------SERVICES------------------------------->
+    <div id="Servicis">
+        <div class="container">
+            <h1 class="sub-title"> my services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p>Website design is the process of planning, conceptualizing, and arranging content online. It includes web apps, mobile apps, and user interface (UI) design.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-webflow"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Website design is the process of planning, conceptualizing, and arranging content online. It includes web apps, mobile apps, and user interface (UI) design.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>APP Design</h2>
+                    <p>Website design is the process of planning, conceptualizing, and arranging content online. It includes web apps, mobile apps, and user interface (UI) design.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Portifolio------------------->
+    <div id="portifolio">
+        <div class="container">
+            <h1 class="sub-title">My future intention to work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/img_forest.jpg" alt="Forest">
+                    <div class="layer">
+                        <h1>Web designing</h1>
+                        <p>the app contain the talented people around the world. download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/option.jpg" alt="Forest">
+                    <div class="layer">
+                        <h1>Game  App</h1>
+                        <p>the app contain the talented people around the world. download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/developers.jpg" alt="Forest">
+                    <div class="layer">
+                        <h1>online shopping Website</h1>
+                        <p>the app contain the talented people around the world. download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more </a>
+        </div>
+    </div>
+    <div id="contuct">
+        <div class="container">
+            <div class="row">
+                <div class="contuct-left">
+                    <h1>Contuct Me</h1>
+                    <p>contuct@: wakisabirhanu@gmail.com</p>
+                    <p>0954617535</p>
+                    <a href="images/OOP Chapter 7.pdf" download class="btn btn2">download pdf</a>
+                </div>
+                <div class="contuct-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @Wakisa B. Made with<i class="fa-sharp fa-light fa-square-heart"></i> hard training</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("links"); 
+        var tabconents=document.getElementsByClassName("tab-contents ");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabconents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

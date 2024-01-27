@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layuot</title>
+    <style>
+        .{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            height: 100vh;
+
+        }
+        header{
+            height: 15%;
+            background-color: rgb(127, 204, 255);
+        }
+        header h1{
+            font-size: 250%;
+            color: whitesmoke;
+            text-align: center;
+            padding: 11px;
+        }
+        nav{
+            height: 5%;
+            background-color: black;
+            overflow: hidden;
+        }
+        nav a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+
+        }
+        nav a:hover{
+            background-color:white;
+            color: blue;
+            
+        }
+        aside{
+            width: 25%;
+            height: 70%;
+            background-color: rgb(255, 123, 0);
+            float: left;
+        }
+        main{
+            width: 50%;
+            height: 70%;
+            background-color: blueviolet;
+            float: left;
+        }
+        footer{
+            clear: both;
+            text-align: center;
+            height: 10%;
+            background-color: rgb(47, 72, 79);
+        }
+        @media screen and (max-width: 450px){
+            aside,main{
+                width: 100%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1>Wolkite University</h1></header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Gallery</a>
+        <a href="">Contact</a>
+    </nav>
+    <aside>left</aside>
+    <main>main content</main>
+    <aside>right</aside>
+    <footer><p>@Copy right <br> no one can rewrite this website without mention source</p></footer>
+</body>
+</html>

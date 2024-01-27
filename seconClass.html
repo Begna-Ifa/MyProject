@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The <abr title="World Health Organization">WHO Was founded in 1948.</abr></p>
+    <p>Marking up abrivation can give useful info for Browser, Translation system &amp; search engines. </p>
+    <p>Browser always insert qoutation marks around q elt.</p>
+    <p>WWF's goal is <q>build a duture where the poeple live with harmony with nature.</q></p>
+    <p> THE html adress elt define contact info (author/owmner) of a doc or article</p>
+    <address> Written by Lazaras D <br> Visit us At <br>wku.edu.et <br>Box 07,WOlkite <br>Ethiopia</address>
+    <p><cite>The WWW</cite> Lazaras d.published in 2022.</p>
+    <bdo dir="rtl">This line wil be written from right to left</bdo>
+    <p>how comment used in html, it is not displayed on the waabpage</p>
+    <!-- <p>This is the comment. and it wion't  displayed on the screen</p>-->
+    <h1 style="background-color: dodgerblue;"> Hello World</h1>
+    <p style="color: tomato;"> This is tomato colored text</p>
+    <h1 style="color: tomato;">Hello World</h1>
+    <h1 style="border: 2px solid tomato;"> Hello World</h1>
+    <h1 style="border: 3px solid violet;"> Hello World</h1>
+    <h1 style="background-color: rgb(0, 0, 255);"> Hello World</h1>
+    <h1 style="background-color: rgb(0, 0, 0);"> Hello World</h1>
+    <h1 style="background-color: rgba(255, 99, 71,0);"> rgba</h1>
+    <h1 style="background-color: rgba(255, 99, 71,1);"> rgba</h1>
+    <h1 style="background-color: #ff0000;"> #ff0000</h1>    
+    <h1 style="background-color: #6a5acd;"> #6a5acd000</h1>
+    <h1 style="background-color: #686868;"> #686868</h1>
+    <h1 style="background-color: #bebebe;"> #bebebe</h1>
+    <a href="mailto:wakisabirhanu@gmaail.com">send email</a> <br>
+    <button onclick="window.location.href='https://waku.adu.et/';">Visit Wku</button>
+  
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

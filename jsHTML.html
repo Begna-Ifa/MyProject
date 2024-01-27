@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Hello World</title>
+    <script type="text/javascript">
+        function sayHello() {
+            alert("hello world")
+        }
+
+        function validateForm() {
+            var x = document.myForm.fName.value;
+            if (x == null || x == "") {
+                alert("Frist name must be filled out");
+                return false;
+            }
+        }
+
+    </script>
+    <style>
+        body{
+            background-color: rgb(226, 43, 226);
+            box-sizing: border-box;
+            border-width: 2px;
+        }
+        h2{
+            color: rgb(4, 0, 255);
+        }
+        fieldset{
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Using Switch Statement and window prompt</h2>
+    <script>
+        var x = window.prompt("enter a no. less than 2");
+        x = Number(x)
+        switch (x) {
+            case 0: document.write("zero");
+                break;
+            case 1: document.write("one");
+                break;
+            default: document.write("not void");
+        }
+    </script>
+        <br />
+
+    </script>
+    <h2>Operator in javaScript</h2>
+    <script type="text/javascript">
+        var x = 3;
+        var y = 10;
+        document.write(typeof x + "<br/>");
+        document.write(x++ * ++y + y + x + "<br/>");
+        x = 3;
+        y = 10;
+        document.write(++x * ++y + y / x + y + " <br/>");
+        x = 3;
+        y = 10;
+        document.write(++x * y++ + y + x + "<br/>");
+        document.write("y=" + y + "x=" + x);
+        var variable = 1; var variable2 = 2;
+    </script>
+    <br>
+    <h2>Using if/else Statement in javaScript</h2>
+    <script type="text/javascript">
+        var variable = 1; var variable2 = 2;
+        if (variable >= 0) {
+            document.write("<p>1 is greater than 0<p/>");
+        }
+        document.write("<p>Resuming Execution after 'if' statement </p>");
+        if (variable > variable2) {
+            document.write("<p>1 is greater than 2 </p>");
+        }
+        else {
+            document.write("<p> 2 is greater than 1 </P>");
+        }
+        document.write("<p>Resuming Execution after 'if/else' statement </p>");
+    </script>
+    <script language="javascript">
+        document.write('JavaScript  says"hello world"')
+
+    </script>
+    <script type="yext/javascript">
+    document.write("hello world")
+  </script>
+    <br>
+    <input type="button" onclick="sayHello()" value="sayHello" />
+    <fieldset>
+    <table border="2" width="100%">
+       <legend><h4>Table creation in javaScript</h4></legend> 
+        <script type="text/javascript">
+            num = 1;
+            while (num <= 4) {
+                document.write("<tr>");
+                j = 1;
+                while (j <= 4) {
+                    document.write("<td>" + num + j + "<td>");
+                    j++;
+                }
+                document.write("<tr>");
+                num++;
+            }
+        </script>
+    </table>
+</fieldset>
+    <h2>JavaScript variable Sequence</h2>
+    <script type="text/javascript">
+        function calculateDensity(height, width, dipth, mass) {
+            var volume = height * dipth * width;
+            var denisty = mass / volume;
+            return denisty;
+        }
+        var hth = 2, wth = 3, dth = 4, mass = 10;
+        var result = calculateDensity(hth, wth, dth, mass);
+        document.write(result);
+    </script>
+    <form action="deno_form.php" name="myForm" onsubmit="return validateForm()" method="post">
+        FristName: <input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>Click the button to see line break in confirm box</h2>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let text = "pres a buttom\n or Either OK or cancel";
+            if (confirm(text) == true) {
+                text = "you pressed ok";
+            }
+            else {
+                text = "you cancelled"
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
